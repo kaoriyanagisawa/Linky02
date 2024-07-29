@@ -1,37 +1,10 @@
-// import React from 'react';
-// import { View, Text, Button } from 'react-native'
-// import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-
-// import { RootStackParamList } from '../../components/navigation/RootStackParamList';
-
-// type GreetingScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'GreetingScreen'>;
-// type Props = {
-//     navigation: GreetingScreenNavigationProp
-// }
-
-// const GreetingScreen: React.FC<Props>  = ({ navigation }) => {
-//   return (
-//     <View>
-//       <Text>あいさつ</Text>
-//       <Button title='ぼしゅう' onPress={() =>
-//         navigation.navigate('RecruitingScreen')}
-//         />
-//     </View>
-//   );
-// };
-
-// export default GreetingScreen
-
 import { Text, View, ScrollView, StyleSheet } from 'react-native';
 import { Card } from '@rneui/themed';
-
-import TopTabWholeScreens from '../../components/navigation/TopTab_whole';
 
 const GreetingScreen:React.FC = () => {
   return(
 
     <ScrollView>
-      {/* <TopTabWholeScreens /> */}
       <View style={styles.container}>
         <Card>
           <View style={styles.headerContainer}>

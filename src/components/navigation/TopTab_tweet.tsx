@@ -1,9 +1,6 @@
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
-import GreetingScreen from "../../app/whole/greeting";
-import RecruitingScreen from "../../app/whole/recruiting";
 import MyTweet from "../../app/tweet/myTweet";
-import FriendChat from "../../app/chat/friendChat";
 import FriendTweet from "../../app/tweet/friendTweet";
 
 const Tab = createMaterialTopTabNavigator()
