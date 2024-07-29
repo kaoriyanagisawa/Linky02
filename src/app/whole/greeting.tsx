@@ -25,9 +25,13 @@
 import { Text, View, ScrollView, StyleSheet } from 'react-native';
 import { Card } from '@rneui/themed';
 
+import TopTabWholeScreens from '../../components/navigation/TopTab_whole';
+
 const GreetingScreen:React.FC = () => {
   return(
+
     <ScrollView>
+      {/* <TopTabWholeScreens /> */}
       <View style={styles.container}>
         <Card>
           <View style={styles.headerContainer}>

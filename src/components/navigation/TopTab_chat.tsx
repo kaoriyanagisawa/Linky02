@@ -2,10 +2,13 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 
 import GreetingScreen from "../../app/whole/greeting";
 import RecruitingScreen from "../../app/whole/recruiting";
+import InstanceChat from "../../app/chat/instanceChat";
+import GroupChat from "../../app/chat/groupChat";
+import FriendChat from "../../app/chat/friendChat";
 
 const Tab = createMaterialTopTabNavigator()
 
-const TopTabScreens:React.FC = () => {
+const TopTabChatScreens:React.FC = () => {
     return(
         <Tab.Navigator
             screenOptions={{
@@ -14,10 +17,11 @@ const TopTabScreens:React.FC = () => {
                 }
             }}
         >
-            <Tab.Screen name="あいさつ" component={GreetingScreen} />
-            <Tab.Screen name="ぼしゅう" component={RecruitingScreen} />
+            <Tab.Screen name="インスタント" component={InstanceChat} />
+            <Tab.Screen name="グループ" component={GroupChat} />
+            <Tab.Screen name="フレンド" component={FriendChat} />
         </Tab.Navigator>
     )
 }
 
-export default TopTabScreens
+export default TopTabChatScreens

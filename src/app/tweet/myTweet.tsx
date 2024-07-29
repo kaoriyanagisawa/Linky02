@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 const MyTweet = () => {
   return (
     <View>
-      <Text>ツイート</Text>
+      <Text>マイツイート</Text>
     </View>
   );
 };

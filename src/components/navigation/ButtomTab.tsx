@@ -5,16 +5,20 @@ import GreetingScreen from "../../app/whole/greeting";
 import GroupChat from "../../app/chat/groupChat";
 import MyTweet from "../../app/tweet/myTweet";
 import Home from "../../app/home/home";
+import TopTabWholeScreens from "./TopTab_whole";
+import TopTabChatScreens from "./TopTab_chat";
+import TopTabTweetScreens from "./TopTab_tweet";
 
 const Tab = createBottomTabNavigator()
 
 const ButtomTabScreens: React.FC = () => {
     return (
         <Tab.Navigator>
-            <Tab.Screen
+          <Tab.Screen
                 name="whole"
-                component={GreetingScreen}
+                component={TopTabWholeScreens}
                 options={{
+                headerShown: false,
                 tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons
                             name="human-greeting-variant"
@@ -26,8 +30,9 @@ const ButtomTabScreens: React.FC = () => {
             />
             <Tab.Screen
                 name="Chat"
-                component={GroupChat}
+                component={TopTabChatScreens}
                 options={{
+                headerShown: false,
                 tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons
                             name="chat"
@@ -39,8 +44,9 @@ const ButtomTabScreens: React.FC = () => {
             />
             <Tab.Screen
                 name="Tweet"
-                component={MyTweet}
+                component={TopTabTweetScreens}
                 options={{
+                headerShown: false,
                 tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons
                             name="message-text"
