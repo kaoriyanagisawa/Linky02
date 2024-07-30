@@ -1,37 +1,16 @@
 import { View, Text, StyleSheet } from 'react-native'
-import { ListItem, Avatar, SearchBar } from '@rneui/themed';
+import { SearchBar } from '@rneui/themed';
+
+import ChatListItem from '../../components/ChatListItem';
 
 const FriendList = () => {
   return (
     <View>
       <SearchBar />
       <Text>フレンドチャット</Text>
-      <ListItem style={styles.itemList}>
-        <Avatar
-          size={48}
-          rounded
-          title="Fc"
-          containerStyle={{ backgroundColor: '#3d4db7' }}
-        />
-        <ListItem.Content>
-          <ListItem.Title>John Doe</ListItem.Title>
-          <ListItem.Subtitle>CEO, Example.com</ListItem.Subtitle>
+      <ChatListItem />
+      <ChatListItem />
 
-        </ListItem.Content>
-      </ListItem>
-
-      <ListItem style={styles.itemList}>
-        <Avatar
-          size={48}
-          rounded
-          title="Fc"
-          containerStyle={{ backgroundColor: '#3d4db7' }}
-        />
-        <ListItem.Content>
-          <ListItem.Title>John Doe</ListItem.Title>
-          <ListItem.Subtitle>CEO, Example.com</ListItem.Subtitle>
-        </ListItem.Content>
-      </ListItem>
 
     </View>
   );

@@ -2,8 +2,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import ButtomTabScreens from './ButtomTab';
 import LogIn from '../../app/auth/log_in';
-import GreetingScreen from '../../app/whole/greeting';
 import SignUp from '../../app/auth/sign_up';
+import ChatScreen from '../../app/chat/chat';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,12 +21,10 @@ const StackScreens: React.FC = () => {
         options={{ headerShown: false }}
       />
      <Stack.Screen
-        name="GreetingScreen"
-        component={GreetingScreen}
+        name="ChatScreen"
+        component={ChatScreen}
         options={{ headerShown: false }}
       />
-
-
       <Stack.Screen
         name="ButtomTabs"
         component={ButtomTabScreens}
