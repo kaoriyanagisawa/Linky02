@@ -1,9 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
-import GreetingScreen from "../../app/whole/greeting";
-import GroupChat from "../../app/chat/groupList";
-import MyTweet from "../../app/tweet/myTweet";
 import Home from "../../app/home/home";
 import TopTabWholeScreens from "./TopTab_whole";
 import TopTabChatScreens from "./TopTab_chat";

@@ -5,4 +5,8 @@ export type RootStackParamList = {
     Tweet: undefined;
     Home: undefined;
     RecruitingScreen: undefined;
+    LogIn: undefined;
+    SignUp: undefined;
+    ButtomTabs: undefined
+
   };

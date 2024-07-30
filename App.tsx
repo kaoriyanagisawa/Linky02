@@ -6,6 +6,7 @@ import Theme from './src/config/theme';
 
 const App: React.FC = () => {
   return(
+
     <ThemeProvider theme={Theme} >
       <NavigationContainer>
         <StackScreens />
