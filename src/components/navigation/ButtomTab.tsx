@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator()
 const ButtomTabScreens: React.FC = () => {
     return (
         <Tab.Navigator>
-          <Tab.Screen
+            <Tab.Screen
                 name="whole"
                 component={TopTabWholeScreens}
                 options={{

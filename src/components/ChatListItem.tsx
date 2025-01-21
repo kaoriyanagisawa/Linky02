@@ -8,7 +8,8 @@ import { RootStackParamList } from './navigation/RootStackParamList';
 const ChatListItem = () => {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   const handlePress = ():void => {
-    navigation.navigate('ChatScreen');
+    console.log('Navigating to ChatScreen');
+    navigation.navigate('ChatScreen')
   }
 
   return (

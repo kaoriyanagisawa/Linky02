@@ -20,17 +20,16 @@ const StackScreens: React.FC = () => {
         component={SignUp}
         options={{ headerShown: false }}
       />
-     <Stack.Screen
-        name="ChatScreen"
-        component={ChatScreen}
-        options={{ headerShown: false }}
-      />
       <Stack.Screen
         name="ButtomTabs"
         component={ButtomTabScreens}
         options={{ headerShown: false }}
       />
-
+      <Stack.Screen
+        name="ChatScreen"
+        component={ChatScreen}
+        options={{ headerShown: false }}
+      />
     </Stack.Navigator>
   );
 }

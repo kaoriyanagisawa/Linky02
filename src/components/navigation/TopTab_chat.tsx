@@ -3,7 +3,6 @@ import InstanceList from "../../app/chat/instanceList";
 import GroupList from "../../app/chat/groupList";
 import FriendList from "../../app/chat/friendList";
 
-
 const Tab = createMaterialTopTabNavigator()
 
 const TopTabChatScreens:React.FC = () => {

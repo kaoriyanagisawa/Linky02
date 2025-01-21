@@ -9,5 +9,6 @@ export type RootStackParamList = {
     SignUp: undefined
     ButtomTabs: undefined
     ChatScreen: undefined
+    Index: undefined
 
   };
