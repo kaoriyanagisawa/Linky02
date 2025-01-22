@@ -7,12 +7,14 @@ import { useNavigation,NavigationProp } from '@react-navigation/native';
 import { RootStackParamList } from '../../components/navigation/RootStackParamList';
 import CircleButton from '../../components/CircleButton';
 
-const navigation = useNavigation<NavigationProp<RootStackParamList>>();
-const handlePress = (): void => {
-  console.log('Navigating go back');
-  navigation.goBack
-}
+
 const GreetingScreen:React.FC = () => {
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+  const handlePress = (): void => {
+    console.log('Navigating go back');
+    navigation.goBack();
+};
+
   return(
 
     <ScrollView>
@@ -34,7 +36,7 @@ const GreetingScreen:React.FC = () => {
           </View>
         </Card>
       </View>
-      <CircleButton onPress={() => {handlePress}}>
+      <CircleButton onPress={handlePress}>
         <Icon name="add" size={40} color="#ffffff" />
       </CircleButton>
     </ScrollView>
@@ -46,7 +48,9 @@ const styles = StyleSheet.create({
     flex: 1
   },
   headerContainer: {
-
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginBottom: 10
   },
   title: {
     marginBottom: 0

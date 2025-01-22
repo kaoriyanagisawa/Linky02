@@ -13,9 +13,9 @@ import { RootStackParamList } from './src/components/navigation/RootStackParamLi
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-const Index = () => {
-  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
-
+// const Index = () => {
+  // const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+  const Index = ({ navigation }: { navigation: NavigationProp<RootStackParamList> }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user !== null) {

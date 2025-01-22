@@ -8,7 +8,7 @@ import { Button } from "@rneui/themed";
 import { useNavigation, NavigationProp } from "@react-navigation/native";
 
 import { auth } from "../../../config";
-// import GreetingScreen from "../whole/greeting";
+import GreetingScreen from "../whole/greeting";
 import { RootStackParamList } from "../../components/navigation/RootStackParamList";
 
 

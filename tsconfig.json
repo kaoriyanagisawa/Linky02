@@ -1,9 +1,28 @@
+// {
+//   "extends": "expo/tsconfig.base",
+//   "compilerOptions": {
+//     "strict": true,
+//     "paths": {
+//       "@firebase/auth": ["./node_modules/@firebase/auth/dist/index.rn.d.ts"]
+//     }
+//   }
+// }
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true,
+    "jsx": "react-native",         // JSXサポートを有効化 (React Native用)
+    "target": "esnext",            // 最新のJavaScript構文をサポート
+    "module": "esnext",            // ESモジュールを使用
+    "strict": true,                // 型チェックを厳密にする
+    "esModuleInterop": true,       // CommonJSモジュールとの互換性を有効化
+    "skipLibCheck": true,          // ライブラリの型チェックをスキップ
+    "moduleResolution": "node",   // モジュール解決をNode.jsスタイルに
+    "allowSyntheticDefaultImports": true, // デフォルトインポートを許可
+    "resolveJsonModule": true,     // JSONモジュールのインポートを許可
     "paths": {
-      "@firebase/auth": ["./node_modules/@firebase/auth/dist/index.rn.d.ts"]
-    }
+    "@firebase/auth": ["./node_modules/@firebase/auth/dist/index.rn.d.ts"]
   }
+  },
+  "include": ["**/*.ts", "**/*.tsx"], // コンパイル対象ファイル
+  "exclude": ["node_modules"]         // 除外するフォルダ
 }
